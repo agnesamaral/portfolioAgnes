@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte Quicksand do Google Fonts */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
+    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
+    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte */
+}
+
+header {
+    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    display: flex; /* Habilita o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0; /* Posição do topo quando sticky */
+    background: var(--bg-color); /* Cor de fundo do cabeçalho */
+    z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
+    border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
+    gap: 1rem; /* Espaçamento entre os elementos flex */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin: 0; /* Remove a margem padrão */
+    font-weight: 500; /* Peso da fonte (médio) */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+}
+
+.search input {
+    padding: 0.375rem 0.75rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Arredonda as bordas */
+    border: 1px solid var(--tertiary-color); /* Define a borda */
+    background: var(--bg-color); /* Cor de fundo */
+    font-family: inherit; /* Herda a família da fonte do elemento pai */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades */
+    width: 30rem; /* Largura do input */
+    color: var(--secondary-color); /* Cor do texto digitado */
+    margin-right: .5rem; /* Margem à direita */
+}
+
+.search input::placeholder {
+    font-size: 1.2rem; /* Tamanho da fonte do placeholder */
+    font-weight: 300; /* Peso da fonte do placeholder */
+    color: var(--tertiary-color); /* Cor do texto do placeholder */
+}
+
+.search input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: var(--bg-color); /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
+}
+
+.introducao {
+    max-width: 80rem;
+    margin: 0 auto 1rem auto;
+    padding: 0 2rem; /* Aumentei o espaçamento lateral */
+}
+
+.introducao aside {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background: none;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+}
+
+section > h2 {
+    margin-top: 3rem; /* Adiciona um espaço acima dos títulos das seções */
+    padding: 0 2rem; /* Mantém o espaçamento lateral */
+    max-width: 80rem; /* Define a mesma largura máxima do conteúdo */
+    margin-left: auto; /* Centraliza o título */
+    margin-right: auto; /* Centraliza o título */
+}
+
+main {
+    max-width: 80rem; /* Largura máxima do conteúdo principal */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+    margin-top: 2rem; /* Margem no topo */
+}
+
+.trajectory-card {
+    background: none; /* Sem cor de fundo */
+    border-radius: 0; /* Sem bordas arredondadas */
+    padding: 0; /* Remove o padding */
+    padding: 0 2rem; /* Aumentei o espaçamento lateral */
+    margin-bottom: 1.25rem; /* Margem inferior */
+    box-shadow: none; /* Sem sombra */
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease; /* Transição suave */
+    border-bottom: 1px solid var(--bg-color); /* Borda inferior */
+    padding-bottom: 1.5rem; /* Espaçamento interno inferior */
+    position: relative; /* Necessário para o posicionamento do pseudo-elemento '::after' */
+}
+
+.trajectory-card:hover {
+    transform: scale(1.01); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para uma mão */
+}
+
+/* Ícone de seta para indicar que é expansível */
+.trajectory-card::after {
+    content: '▼';
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Gira a seta quando o card está expandido */
+.trajectory-card.expanded::after {
+    transform: rotate(180deg);
+}
+
+.trajectory-card h2 {
+    margin-top: 0; /* Remove a margem superior */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    border-bottom: none; /* Sem borda inferior */
+    padding-bottom: 0; /* Sem espaçamento interno inferior */
+    margin-bottom: 0.25rem; /* Margem inferior */
+    color: var(--primary-color); /* Cor do texto */
+}
+
+.trajectory-card p {
+    margin: 0.5rem 0; /* Margem superior e inferior */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin-bottom: 0.5rem; /* Margem inferior */
+    color: var(--secondary-color); /* Cor do texto */
+}
+
+.trajectory-card ul {
+    list-style-type: '✓';
+    margin-top: 0.5rem;
+    padding-left: 20px;
+    max-height: 0; /* Esconde a lista por padrão */
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+    transition: max-height 0.5s ease-out; /* Animação suave para expandir/recolher */
+}
+
+/* Expande a lista quando o artigo tem a classe 'expanded' */
+.trajectory-card.expanded ul {
+    max-height: 500px; /* Um valor alto o suficiente para mostrar todo o conteúdo */
+}
+
+.trajectory-card li {
+    padding-left: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.trajectory-card p strong {
+    color: var(--tertiary-color); /* Cor do texto em negrito */
+    font-weight: 400; /* Peso da fonte */
+}
+
+.trajectory-card a {
+    color: var(--primary-color); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 200; /* Peso da fonte */
+}
+
+.trajectory-card a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.sem-resultados {
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+/* --- Estilos da Seção de Cases --- */
+.cases-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
+    gap: 1.5rem; /* Espaçamento entre os cards */
+    padding: 1rem 2rem; /* Aumentei o espaçamento lateral */
+}
+
+.case-card {
+    background-color: #2d2e30; /* Um cinza um pouco mais claro que o fundo */
+    border: 1px solid var(--tertiary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo do card em coluna */
+    justify-content: space-between; /* Empurra o link "Saiba mais" para o final */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar o card */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    cursor: default;
+}
+
+/* Estilos aplicados apenas quando o card TEM uma imagem */
+.case-card.com-imagem {
+    padding-top: 0; /* Remove o padding do topo para a imagem colar */
+}
+
+.case-card.com-imagem img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: 180px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 8px 8px 0 0; /* Arredonda apenas os cantos superiores */
+}
+
+/* Remove a seta de expansão dos cards de cases, se houver herança */
+.case-card::after {
+    content: none; /* Remove a seta de expansão dos cards de cases */
+}
+
+.cases-container h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.cases-container a {
+    margin-top: 1rem; /* Espaço entre a descrição e o link */
+    align-self: flex-start; /* Alinha o link à esquerda */
+    color: var(--primary-color); /* Garante a cor padrão do link */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease; /* Adiciona transição suave para a cor */
+}
+
+.cases-container a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.cases-container a:visited {
+    color: white; /* Cor do link após ser clicado */
+}
+
+
+/* --- Início: Estilos da Seção de Contato --- */
+.contato {
+    align-items: center; /* Alinha o título e os links verticalmente */
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 1rem;
+    max-width: 80rem; /* Mesma largura máxima do 'main' */
+    margin: 2rem auto 3rem auto; /* Centraliza a seção e adiciona margem vertical */
+    padding: 0 2rem; /* Alinha com o padding do conteúdo */
+}
+
+.contato-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #2a2e37;
+    color: #fff; /* Cor do texto alterada para branco */
+    text-decoration: none;
+    border-radius: 2rem;
+    border: 1px solid var(--tertiary-color);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contato-link:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    header { /* Estilos para telas com largura máxima de 768px */
+        flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
+        padding: 1rem; /* Reduz o espaçamento interno */
+    }
+
+    header h1 { /* Estilos para o h1 no cabeçalho em telas menores */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 1rem; /* Adiciona margem inferior */
+    }
+
+    .search input { /* Estilos para o input em telas menores */
+        width: 90vw; /* Largura baseada na largura da viewport */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    }
+
+    main { /* Estilos para o main em telas menores */
+        padding: 0 1rem; /* Adiciona espaçamento lateral */
+    }
+
+    .trajectory-card:hover { /* Estilos para o article em telas menores */
+        transform: none; /* Remove o efeito de escala ao passar o mouse */
+    }
+
+    .cases-container {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { /* Estilos para o h1 em telas com largura máxima de 480px */
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
+        max-width: 70%; /* Define uma largura máxima */
+        word-wrap: break-word; /* Permite a quebra de palavras longas */
+    }
+
+    .search input, /* Estilos para o input e seu placeholder em telas muito pequenas */
+    .search input::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+    }
+
+    .trajectory-card h2 { /* Estilos para o h2 do article em telas muito pequenas */
+        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+    }
+
+    .search { /* Estilos para a div do cabeçalho em telas muito pequenas */
+        display: flex; /* Habilita flexbox */
+        align-items: center; /* Alinha itens ao centro */
+        justify-content: center; /* Centraliza itens */
+        flex-direction: column; /* Organiza em coluna */
+        gap: 0.5rem; /* Espaçamento entre os itens */
+    }
+
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .cases-container {
+        grid-template-columns: 1fr; /* Uma coluna em celulares */
+    }
+
+    button { /* Estilos para o botão em telas muito pequenas */
+        margin-top: 1rem; /* Adiciona margem no topo */
+    }
+}
