@@ -36,6 +36,27 @@ header h1 {
     margin: 0; /* Remove a margem padrão */
     font-weight: 500; /* Peso da fonte (médio) */
     white-space: nowrap; /* Impede a quebra de linha do texto */
+    
+}
+
+.lang-switch {
+    margin-left: 0.5rem;
+}
+
+#lang-toggle {
+    background: transparent;
+    border: 1px solid var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#lang-toggle:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border-color: var(--primary-color);
 }
 
 .search input {
