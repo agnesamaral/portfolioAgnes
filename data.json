@@ -1,8 +1,10 @@
 { "experiencias": [
     {
         "nome":"GembaGroup",
+        "nome_en":"GembaGroup",
         "data": "janeiro 2024 - presente",
         "cargo": "Especialista em Marketing",
+        "cargo_en": "Marketing Specialist",
         "descricao": [
             "Responsável pela estratégia de marketing com foco em crescimento orgânico e fortalecimento da presença digital.",
             "Aumento de 96% nas impressões totais e 171% no engajamento acumulado em comparação ao ano anterior. ✅ (dados internos de 2024–2025)",
@@ -11,12 +13,23 @@
             "Planejamento e execução do calendário editorial, criação de landing pages e reestruturação do site institucional.",
             "Criação de cadências de e-mail, roteiros de vídeo e produção do podcast “Vem pro Gemba”.",
             "Apoio à equipe de design no Canva e parceria estratégica com times de marketing e comercial"
+        ],
+        "descricao_en": [
+            "Responsible for marketing strategy focused on organic growth and strengthening digital presence.",
+            "Achieved a 96% increase in total impressions and a 171% increase in cumulative engagement compared to the previous year. ✅ (internal data 2024–2025)",
+            "Increased subscribers by 45% and views by 47% on the YouTube channel.",
+            "Grew LinkedIn followers by 12%.",
+            "Planned and executed the editorial calendar, created landing pages and restructured the corporate website.",
+            "Created email cadences, video scripts, and produced the podcast 'Vem pro Gemba'.",
+            "Supported the design team on Canva and partnered strategically with marketing and sales teams"
         ]
     },
     {
         "nome":"Monditech",
+        "nome_en":"Monditech",
         "data": "jul/2020 – dez/2023",
         "cargo": "Analista de Marketing",
+        "cargo_en": "Marketing Analyst",
         "descricao": [
             "Responsável pelo planejamento e execução de conteúdo",
             "Criação de materiais para redes sociais, blog, e-mail marketing e vídeos institucionais.",
@@ -24,108 +37,165 @@
             "Condução de pesquisas com usuários, desk research e benchmarking.",
             "Participação no lançamento e branding do SaaS blueEz.",
             "Apoio no rebranding institucional do grupo Mondi e na comunicação das suas frentes de atuação."
+        ],
+        "descricao_en": [
+            "Responsible for content planning and execution",
+            "Created materials for social media, blog, email marketing and corporate videos.",
+            "Developed a tone of voice manual and page architecture with UX Writing.",
+            "Conducted user research, desk research and benchmarking.",
+            "Participated in the launch and branding of the blueEz SaaS.",
+            "Supported the institutional rebranding of the Mondi group and communication across its business units."
         ]
     },
     {
         "nome":"Connecty Pay",
+        "nome_en":"Connecty Pay",
         "data": "mar/2020 – mai/2020",
         "cargo": "Analista de Marketing",
+        "cargo_en": "Marketing Analyst",
         "descricao": [
             "Participação na reestruturação da identidade verbal da marca e definição do tom de voz.",
             "Criação de microcopies para telas e notificações do app.",
             "Redação da nova home do site e revisão do planejamento de conteúdo da agência parceira.",
             "Desenvolvimento de apresentações institucionais."
+        ],
+        "descricao_en": [
+            "Participated in restructuring the brand's verbal identity and defining the tone of voice.",
+            "Created microcopy for screens and app notifications.",
+            "Wrote the new homepage and revised the partner agency's content plan.",
+            "Developed corporate presentations."
         ]
     },
     {
         "nome":"Agência Action",
+        "nome_en":"Action Agency",
         "data": "abr/2019 – mar/2020",
         "cargo": "Assistente de Planejamento e Conteúdo",
+        "cargo_en": "Planning and Content Assistant",
         "descricao": [
             "Planejamento e produção de conteúdo online e offline para clientes.",
             "Redação de roteiros e textos publicitários e coordenação de pautas da equipe de criação.",
             "Apoio no atendimento a clientes e controle de entregas da área."
+        ],
+        "descricao_en": [
+            "Planned and produced online and offline content for clients.",
+            "Wrote scripts and advertising texts and coordinated the creative team's editorial calendar.",
+            "Supported client service and delivery management."
         ]
     },
     {
         "nome":"Onde Ir Curitiba",
+        "nome_en":"Onde Ir Curitiba",
         "data": "jul/2016 – set/2019",
         "cargo": "Responsável pela Comunicação",
+        "cargo_en": "Head of Communications",
         "descricao": [
             "Criação e execução da estratégia de comunicação da plataforma.",
             "Produção de conteúdos otimizados para SEO, microcopies e campanhas de e-mail marketing.",
             "Gestão de redes sociais, curadoria de conteúdo e relacionamento com parceiros.",
             "Coordenação de ações promocionais e revisão de entregas da equipe."
+        ],
+        "descricao_en": [
+            "Created and executed the platform's communication strategy.",
+            "Produced SEO-optimized content, microcopy and email marketing campaigns.",
+            "Managed social media, curated content and handled partner relations.",
+            "Coordinated promotional actions and reviewed team deliverables."
         ]
     },
     {
         "nome":"FUNASA - Fundação Nacional da Saúde",
+        "nome_en":"FUNASA - National Health Foundation",
         "data": "fev/2015 – fev/2016",
         "cargo": "Estagiária de Comunicação",
+        "cargo_en": "Communications Intern",
         "descricao": [
             "Apoio à assessoria de comunicação institucional.",
             "Produção de materiais de divulgação e cobertura de eventos internos."
+        ],
+        "descricao_en": [
+            "Supported the institutional communications office.",
+            "Produced promotional materials and covered internal events."
         ]
     }
 ],
 "cases": [
     {
         "titulo": "Produção do Podcast Vem pro Gemba",
+        "titulo_en": "Production of the 'Vem pro Gemba' Podcast",
         "descricao": "Responsável pela produção completa do podcast, desde o planejamento de pautas e roteirização até a gravação e edição dos episódios.",
+        "descricao_en": "Responsible for full podcast production, from content planning and scripting to recording and editing episodes.",
         "link": "https://www.youtube.com/playlist?list=PL1-ByyBJvj1sb2P-SeWR-Xz29o6YEfyuv",
         "imagem": "img/case-podcast-gemba.jpg"
     },
     {
         "titulo": "Roteirização do vídeo Cidade Ativa",
+        "titulo_en": "Scripting for 'Cidade Ativa' Video",
         "descricao": "Criação do roteiro para o vídeo retrospectiva do projeto Cidade Ativa, da Prefeitura de São José dos Pinhais, destacando os principais resultados e marcos.",
+        "descricao_en": "Wrote the script for the retrospective video of the Cidade Ativa project (City Hall of São José dos Pinhais), highlighting key results and milestones.",
         "link": "https://www.instagram.com/p/B-e40Zrliky/?utm_source=ig_embed&utm_campaign=embed_video_watch_again",
         "imagem": "img/case-cidade-ativa.jpg"
     },
     {
         "titulo": "Tutoriais do blueEz",
+        "titulo_en": "blueEz Tutorials",
         "descricao": "Atuação completa na criação dos vídeos tutoriais da plataforma SaaS blueEz, incluindo roteirização, apresentação e edição final.",
+        "descricao_en": "Complete production of the blueEz SaaS tutorial videos, including scripting, presenting and final editing.",
         "link": "https://www.youtube.com/@blueez.oficial/playlists",
         "imagem": "img/case-blueez.jpg"
     },
     {
         "titulo": "Campanha Omar Calçados",
+        "titulo_en": "Omar Footwear Campaign",
         "descricao": "Desenvolvimento do roteiro para o vídeo publicitário da campanha de primavera/outono da Omar Calçados, com foco em storytelling e apelo emocional.",
+        "descricao_en": "Developed the script for the spring/autumn ad campaign video for Omar Footwear, focusing on storytelling and emotional appeal.",
         "link": "https://www.youtube.com/watch?v=Wq72VmjyA_Y",
         "imagem": "img/case-omar-calcados.jpg"
     },
     {
         "titulo": "Desenvolvimento app aTable",
+        "titulo_en": "aTable App Development",
         "descricao": "Projeto de UX/UI para um aplicativo de reservas, envolvendo pesquisa, wireframing e prototipagem para criar uma experiência de usuário intuitiva.",
+        "descricao_en": "UX/UI project for a reservations app, involving research, wireframing and prototyping to create an intuitive user experience.",
         "link": "https://www.behance.net/gallery/169008179/aTable-App-de-reserva-de-mesa",
         "imagem": "img/case-atable.jpg"
     },
     {
         "titulo": "Rebranding de Novo Site",
+        "titulo_en": "New Site Rebranding",
         "descricao": "Condução do processo de rebranding e desenvolvimento de um novo site institucional, com foco em modernizar a identidade visual e melhorar a usabilidade.",
+        "descricao_en": "Led the rebranding process and development of a new institutional website, focusing on modernizing visual identity and improving usability.",
         "link": "https://warm-screw-027.notion.site/Novo-site-acf140a4594b4c18a897c2d3698dc6d7?source=copy_link",
         "imagem": "img/case-rebranding-site.jpg"
     },
     {
         "titulo": "Criação da Página de Planos para plataforma SaaS",
+        "titulo_en": "Pricing Page Creation for SaaS",
         "descricao": "Desenvolvimento da arquitetura de informação e do conteúdo para a página de planos de uma plataforma SaaS, utilizando técnicas de UX Writing para aumentar a conversão.",
+        "descricao_en": "Developed information architecture and content for a SaaS pricing page using UX Writing techniques to increase conversion.",
         "link": "https://warm-screw-027.notion.site/P-gina-de-planos-d93cadd215094078881d675bea311cf0?source=copy_link",
         "imagem": "img/case-pagina-planos.jpg"
     },
     {
         "titulo": "UX Writing Challenge",
+        "titulo_en": "UX Writing Challenge",
         "descricao": "Participação em um desafio de UX Writing, criando microtextos (microcopy) para diferentes cenários de interação em aplicativos e sites.",
+        "descricao_en": "Participated in a UX Writing challenge, creating microcopy for different interaction scenarios in apps and websites.",
         "link": "https://warm-screw-027.notion.site/UX-writing-Challenge-40410fe75a0a41deb60393e4ca2bb83b?source=copy_link",
         "imagem": "img/case-ux-writing.jpg"
     },
     {
         "titulo": "WebWriting - Onde Ir Curitiba",
+        "titulo_en": "WebWriting - Onde Ir Curitiba",
         "descricao": "Produção de conteúdo otimizado para SEO para o portal Onde Ir Curitiba, com foco em engajamento e alcance orgânico.",
+        "descricao_en": "Produced SEO-optimized content for the Onde Ir Curitiba portal, focusing on engagement and organic reach.",
         "link": "https://agnesdoamaral.medium.com/jovens-de-curitiba-criam-bistrô-colaborativo-para-cozinheiros-amadores-e-profissionais-34b4188f3148",
         "imagem": "img/case-ondeir.jpg"
     },
     {
         "titulo": "WebWriting - Bar do Alemão",
+        "titulo_en": "WebWriting - Bar do Alemão",
         "descricao": "Criação de texto para o portal Onde Ir Curitiba sobre o tradicional Bar do Alemão, contando sua história e destacando seus atrativos.",
+        "descricao_en": "Wrote an article for the Onde Ir Curitiba portal about the traditional Bar do Alemão, telling its story and highlighting attractions.",
         "link": "https://agnesdoamaral.medium.com/bar-do-alemão-completa-39-anos-de-história-da99c1ea4f11",
         "imagem": "img/case-bar-alemao.jpg"
     }
