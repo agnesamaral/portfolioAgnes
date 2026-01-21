@@ -21,7 +21,7 @@ const staticTranslations = {
     pt: {
         h1: "Oi, eu sou a Agnes do Amaral",
         searchPlaceholder: "Busque por atividade, cargo, etc",
-        intro: "💡 Com experiência desde 2016 em copywriting, produção de conteúdo estratégico, UX writing e marketing digital. Atuei em agências e principalmente em empresas B2B, especialmente no setor de tecnologia, criando conteúdos técnicos e publicitários para geração de demanda, fortalecimento de marca e suporte à área comercial. Minha vivência inclui atividades como social media, criação de landing pages e fluxos de e-mail, metodologias ágeis, SEO e roteirização de vídeos. Sou uma profissional versátil, colaborativa e sempre aberta a novos aprendizados.",
+        intro: "💡 Atuo desde 2016 com copywriting, conteúdo estratégico, UX writing e marketing digital. Já passei por agências e, principalmente, por empresas B2B do setor de tecnologia, criando desde materiais técnicos até peças publicitárias voltadas para geração de demanda, reforço de marca e suporte ao time comercial. Minha experiência inclui social media, criação de landing pages e fluxos de e-mail, aplicação de metodologias ágeis, SEO e roteirização de vídeos. Sou uma profissional versátil, colaborativa e sempre aberta a aprender e evoluir.",
         contactHeading: "Vamos trabalhar juntos?",
         emailText: "E-mail",
         whatsappText: "WhatsApp",
