@@ -14,7 +14,8 @@ const searchButton = document.querySelector('.search-button');
 
 let dadosCompletos = [];
 let casesCompletos = [];
-let currentLang = 'pt'; // 'pt' or 'en'
+// Detecta o idioma pela URL ou salvo no localStorage, padrão é 'pt'
+let currentLang = new URLSearchParams(window.location.search).get('lang') || localStorage.getItem('lang') || 'pt';
 
 const staticTranslations = {
     pt: {
@@ -187,6 +188,7 @@ function applyLanguage() {
 
 langToggle.addEventListener('click', () => {
     currentLang = (currentLang === 'pt') ? 'en' : 'pt';
+    localStorage.setItem('lang', currentLang); // Salva a preferência
     applyLanguage();
 });
 
