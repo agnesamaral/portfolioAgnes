@@ -81,10 +81,11 @@ function renderizarCards(dados) {
         // usa versão em inglês quando disponível
         const nome = (currentLang === 'en' && dado.nome_en) ? dado.nome_en : dado.nome;
         const cargo = (currentLang === 'en' && dado.cargo_en) ? dado.cargo_en : dado.cargo;
+        const data = (currentLang === 'en' && dado.data_en) ? dado.data_en : dado.data;
         const descricaoArray = (currentLang === 'en' && dado.descricao_en) ? dado.descricao_en : dado.descricao;
         const listaDescricao = `<ul>${descricaoArray.map(item => `<li>${item}</li>`).join("")}</ul>`;
         article.innerHTML = `<h2>${nome}</h2>
-        <p>${dado.data}</p>
+        <p>${data}</p>
         <p>${cargo}</p>
         ${listaDescricao}`;
 

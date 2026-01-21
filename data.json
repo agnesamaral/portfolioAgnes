@@ -2,7 +2,8 @@
     {
         "nome":"GembaGroup",
         "nome_en":"GembaGroup",
-        "data": "janeiro 2024 - presente",
+        "data": "jan/2024 - nov/2025",
+        "data_en": "Jan/2024 - Nov/2025",
         "cargo": "Especialista em Marketing",
         "cargo_en": "Marketing Specialist",
         "descricao": [
@@ -28,6 +29,7 @@
         "nome":"Monditech",
         "nome_en":"Monditech",
         "data": "jul/2020 – dez/2023",
+        "data_en": "Jul/2020 – Dec/2023",
         "cargo": "Analista de Marketing",
         "cargo_en": "Marketing Analyst",
         "descricao": [
@@ -50,6 +52,7 @@
     {
         "nome":"Connecty Pay",
         "nome_en":"Connecty Pay",
+        "data_en": "Mar/2020 – May/2020",
         "data": "mar/2020 – mai/2020",
         "cargo": "Analista de Marketing",
         "cargo_en": "Marketing Analyst",
@@ -69,6 +72,7 @@
     {
         "nome":"Agência Action",
         "nome_en":"Action Agency",
+        "data_en": "Apr/2019 – Mar/2020",
         "data": "abr/2019 – mar/2020",
         "cargo": "Assistente de Planejamento e Conteúdo",
         "cargo_en": "Planning and Content Assistant",
@@ -86,6 +90,7 @@
     {
         "nome":"Onde Ir Curitiba",
         "nome_en":"Onde Ir Curitiba",
+        "data_en": "Jul/2016 – Sep/2019",
         "data": "jul/2016 – set/2019",
         "cargo": "Responsável pela Comunicação",
         "cargo_en": "Head of Communications",
@@ -104,6 +109,7 @@
     },
     {
         "nome":"FUNASA - Fundação Nacional da Saúde",
+        "data_en": "Feb/2015 – Feb/2016",
         "nome_en":"FUNASA - National Health Foundation",
         "data": "fev/2015 – fev/2016",
         "cargo": "Estagiária de Comunicação",
