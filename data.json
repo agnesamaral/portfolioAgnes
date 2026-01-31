@@ -1,5 +1,19 @@
 { "experiencias": [
     {
+        "nome":"Moore Realm Studios (Voluntária)",
+        "nome_en":"Moore Realm Studios (Volunteer)",
+        "data": "dez/2025 - presente",
+        "data_en": "Dec/2025 - Present",
+        "cargo": "Redatora em Jogos (Voluntária)",
+        "cargo_en": "Game Writer (Volunteer)",
+        "descricao": [
+            "Trabalho voluntário como redatora em jogos na Moore Realm Studios."
+        ],
+        "descricao_en": [
+            "Volunteering as a game writer at Moore Realm Studios."
+        ]
+    },
+    {
         "nome":"GembaGroup",
         "nome_en":"GembaGroup",
         "data": "jan/2024 - nov/2025",
