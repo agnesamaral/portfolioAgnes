@@ -5,10 +5,13 @@
 }
 
 :root {
-    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
-    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
-    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
-    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --bg-color: #f8f9fa;       /* cinza muito claro (Fundo) */
+    --surface-color: #f1f5f9;  /* cinza */
+    --primary-color: #110d47;  /* Azul Royal vivo (Sotaque/Links) */
+    --secondary-color: #112550; /* Azul Marinho profundo (Texto Principal) */
+    --text-dim: #64748b;       /* Cinza azulado médio (Descrições) */
+    --glass-border: rgba(15, 23, 42, 0.08); /* Borda sutil escura */
+    --accent-glow: rgba(0, 122, 255, 0.05); /* Brilho azulado suave */
 }
 
 body {
@@ -19,24 +22,26 @@ body {
 }
 
 header {
-    padding: 2rem 1rem; /* Espaçamento interno (2rem em cima/baixo, 1rem nos lados) */
+    background: rgba(248, 249, 250, 0.8); /* Mesma cor do fundo mas transparente */
+    backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 5%;
     display: flex; /* Habilita o layout flexbox */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: space-around; /* Distribui os itens com espaço ao redor */
     position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0; /* Posição do topo quando sticky */
-    background: var(--bg-color); /* Cor de fundo do cabeçalho */
     z-index: 10; /* Define a ordem de empilhamento para ficar sobre outros elementos */
-    border-bottom: 1px solid var(--bg-color); /* Adiciona uma borda inferior */
     gap: 1rem; /* Espaçamento entre os elementos flex */
 }
 
 header h1 {
     font-size: 1.5rem; /* Tamanho da fonte */
     margin: 0; /* Remove a margem padrão */
-    font-weight: 500; /* Peso da fonte (médio) */
+    font-weight: 800; /* Peso da fonte (extra-bold) */
     white-space: nowrap; /* Impede a quebra de linha do texto */
-    
+    color: var(--secondary-color); /* Azul marinho profundo */
+    letter-spacing: -0.03em; /* Espaçamento de letra condensado */
 }
 
 .lang-switch {
@@ -44,9 +49,9 @@ header h1 {
 }
 
 #lang-toggle {
-    background: transparent;
-    border: 1px solid var(--tertiary-color);
+    border: 1.5px solid var(--glass-border);
     color: var(--secondary-color);
+    background: white;
     padding: 0.5rem 0.75rem;
     border-radius: 999px;
     cursor: pointer;
@@ -55,7 +60,7 @@ header h1 {
 
 #lang-toggle:hover {
     background: var(--primary-color);
-    color: var(--bg-color);
+    color: white;
     border-color: var(--primary-color);
 }
 
@@ -105,6 +110,9 @@ section > h2 {
     max-width: 80rem; /* Define a mesma largura máxima do conteúdo */
     margin-left: auto; /* Centraliza o título */
     margin-right: auto; /* Centraliza o título */
+    color: var(--secondary-color); /* Azul marinho profundo */
+    font-weight: 800; /* Peso da fonte (extra-bold) */
+    letter-spacing: -0.03em; /* Espaçamento de letra condensado */
 }
 
 main {
@@ -213,7 +221,7 @@ main {
 }
 
 .case-card {
-    background-color: #2d2e30; /* Um cinza um pouco mais claro que o fundo */
+    background-color: #e3f2fd; /* Azul claro */
     border: 1px solid var(--tertiary-color);
     padding: 1.5rem;
     border-radius: 8px;
@@ -247,9 +255,11 @@ main {
 }
 
 .cases-container h4 {
-    color: var(--primary-color);
+    color: var(--secondary-color); /* Azul marinho profundo */
     font-size: 1.2rem;
     margin-top: 0;
+    font-weight: 800; /* Peso da fonte (extra-bold) */
+    letter-spacing: -0.03em; /* Espaçamento de letra condensado */
 }
 
 .cases-container a {
@@ -281,24 +291,25 @@ main {
 }
 
 .contato-link {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 20px var(--accent-glow);
+    padding: 1.2rem 2.5rem;
+    border-radius: 14px;
+    font-weight: 700;
+    text-transform: none; /* Mantém moderno e menos "gritante" */
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #2a2e37;
-    color: #fff; /* Cor do texto alterada para branco */
     text-decoration: none;
-    border-radius: 2rem;
-    border: 1px solid var(--tertiary-color);
     transition: all 0.3s ease;
-    font-weight: 500;
 }
 
 .contato-link:hover {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-    border-color: var(--primary-color);
-    transform: translateY(-3px);
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.15);
 }
 
 @media (max-width: 768px) {
