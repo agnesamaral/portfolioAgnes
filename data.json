@@ -140,6 +140,14 @@
 ],
 "cases": [
     {
+        "titulo": "Social Media - Posts",
+        "titulo_en": "Social Media - Posts",
+        "descricao": "Planejamento e criação dos posts, incluindo design, além do copy",
+        "descricao_en": "Planning and creating posts, including design and copy",
+        "link": "https://www.behance.net/gallery/245220065/Posts-Social-Media-Gemba-Group",
+        "imagem": "img/case-posts.jpg"
+    },
+    {
         "titulo": "Produção do Podcast Vem pro Gemba",
         "titulo_en": "Production of the 'Vem pro Gemba' Podcast",
         "descricao": "Responsável pela produção completa do podcast, desde o planejamento de pautas e roteirização até a gravação e edição dos episódios.",

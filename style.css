@@ -312,6 +312,31 @@ main {
     box-shadow: 0 12px 25px rgba(15, 23, 42, 0.15);
 }
 
+/* Definição da animação de revelação */
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Aplicação nos cards de projetos e de trajetória */
+.case-card, .trajectory-card {
+    /* Suporte para navegadores modernos (Chrome, Edge, Opera) */
+    view-timeline-name: --reveal;
+    view-timeline-axis: block;
+    
+    animation: revealUp linear both;
+    animation-timeline: --reveal;
+    
+    /* Define que a animação ocorre apenas quando o item entra/sai da tela */
+    animation-range: entry 10% cover 30%;
+}
+
 @media (max-width: 768px) {
     header { /* Estilos para telas com largura máxima de 768px */
         flex-direction: column; /* Organiza os itens do cabeçalho em coluna */
